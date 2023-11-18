@@ -1,0 +1,176 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(117deg, rgba(2, 0, 36, 1) 0%, rgba(18, 9, 121, 1) 47%, rgba(0, 212, 255, 1) 100%); */
+    background-repeat: no-repeat;
+    background-image: url("https://www.sheknows.com/wp-content/uploads/2018/08/dgldbejjyofmcsfvkfd9.jpeg?w=1920");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 80px; */
+}
+
+.todo {
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 10%;
+    padding: 30px;
+    width: 100%;
+    max-width: 540px;
+}
+
+.complete {
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    padding: 30px;
+    width: 100%;
+    max-width: 540px;
+}
+
+.heading {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    background: transparent;
+    height: 50px;
+    border: none;
+    outline: none;
+}
+
+#add {
+    border: none;
+    outline: none;
+    background-color: rgb(195, 227, 230);
+    height: 50px;
+    border-radius: 30px;
+    width: 170px;
+    font-size: 20px;
+    width: 123px;
+}
+
+ul li {
+    list-style: none;
+    cursor: pointer;
+    padding-left: 30px;
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 70px;
+    /* border: 2px solid black; */
+}
+
+.before:before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("./images/unchecked.png");
+    border-radius: 50%;
+    left: -1px;
+    top: -1px;
+    background-position: center;
+    background-size: cover;
+}
+
+.checked:before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("https://w7.pngwing.com/pngs/232/994/png-transparent-check-mark-computer-icons-symbol-clay-miscellaneous-blue-angle-thumbnail.png");
+    border-radius: 50%;
+    left: -1px;
+    top: -1px;
+    background-position: center;
+    background-size: cover;
+}
+
+.removedchecked:before {
+    content: "";
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("https://htmlcolorcodes.com/assets/images/colors/white-color-solid-background-1920x1080.png");
+    border-radius: 50%;
+    left: -1px;
+    top: -1px;
+    background-position: center;
+    background-size: cover;
+}
+
+.line {
+    text-decoration: line-through;
+}
+
+.nomargin {
+    margin-bottom: 30px;
+}
+
+.noline {
+    text-decoration: none;
+}
+
+span {
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 9px;
+    /* color: #0000ff; */
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+span:hover {
+    background: rgb(195, 227, 230);
+}
+
+.processed_none {
+    display: none;
+}
+
+.cbtn {
+    border: none;
+    outline: none;
+    background-color: rgb(195, 227, 230);
+    height: 36px;
+    border-radius: 30px;
+    width: 170px;
+    font-size: 15px;
+    width: 90px;
+    position: absolute;
+    top: 31px;
+    left: 10px;
+    /* border: 2px solid black; */
+    margin-top: 10px;
+    /* margin-bottom: 20px; */
+}

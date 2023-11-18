@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tribute page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Nunito&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        body {
+            background-color: black;
+        }
+        
+        .date-name {
+            width: 100%;
+            height: 150px;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            background: linear-gradient(-45deg, #81ee52, #52ee6c, #57ee52, #81ee52);
+            box-shadow: 1px 20px 30px green;
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: white;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .caption_pic {
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid blanchedalmond; */
+            align-items: center;
+            margin-top: 70px;
+            color: white;
+        }
+        
+        .right {
+            width: 100%;
+            height: 400px;
+            background-image: url("https://www.courier-journal.com/gcdn/-mm-/13a987bfb7e4adccef313d8192d27d7a3a24d457/c=0-32-598-370/local/-/media/2015/09/29/Louisville/Louisville/635791255943820028-muhammad-ali-sports-illustrated-cover-legacy-award.jpg?width=1200&disable=upscale&format=pjpg&auto=webp");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            /* border-radius: 54% 46% 65% 35%; */
+        }
+        
+        .biography {
+            display: flex;
+            text-align: center;
+            transition: 0.4s ease-in-out;
+            margin-top: 100px;
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+            padding: 40px;
+            background: linear-gradient(-45deg, #81ee52, #52ee6c, #57ee52, #81ee52);
+            box-shadow: 1px 20px 30px green;
+            border-radius: 20px;
+            color: white;
+            margin-bottom: 100px;
+        }
+        
+        .biography:hover {
+            background: black;
+            color: #3ce74d;
+            border: 2px solid #3ce74d;
+            box-shadow: 1px 20px 30px green;
+        }
+        
+        .heading {
+            color: #81ee52;
+            text-align: center;
+            margin-top: 130px;
+            font-size: 50px;
+        }
+        
+        @media (max-width:799px) {
+            .right {
+                width: 75%;
+            }
+            .heading {
+                font-size: 30px;
+                margin-top: 40px;
+            }
+            .biography {
+                width: 75%;
+            }
+        }
+        
+        @media (max-width:477px) {
+            .date-name {
+                height: 101px;
+            }
+            .right {
+                width: 90%;
+            }
+            .heading {
+                color: #81ee52;
+                text-align: center;
+                margin-top: 0px;
+                font-size: 20px;
+            }
+            .biography {
+                width: 80%;
+            }
+        }
+    </style>
+
+    <div class="date-name">
+        <h1>Muhammad Ali</h1>
+        <p> 1942- 2016</p>
+
+
+    </div>
+    <div class="caption_pic">
+
+        <div class="right">
+
+        </div>
+    </div>
+    <div class="heading">
+        <h1>Biography</h1>
+    </div>
+    <div class="biography">
+        <p> <b style="font-size: xx-large;"> Muhammad Ali </b> was an American professional boxer and activist. Nicknamed "the Greatest", he is regarded as one of the most significant sports figures of the 20th century and is often regarded as the greatest
+            heavyweight boxer of all time. He held the Ring magazine heavyweight title from 1964 to 1970 American professional boxer and social activist. Ali was the first fighter to win the world heavyweight championship on three separate occasions;
+            he successfully defended this title 19 times.
+        </p>
+    </div>
+</body>
+
+</html>
